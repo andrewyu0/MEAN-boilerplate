@@ -1,0 +1,19 @@
+.btn {
+	margin-top : 10px;
+}
+
+.form-control {
+	margin-top : 10px;
+}
+
+.messages-list {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	min-height: 40px;
+	background-color: #F7F7F9;
+}
+
+img {
+	margin: 20px;
+}
