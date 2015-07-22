@@ -1,7 +1,11 @@
 <div class='message-partial'>
+	<a ng-click='toggleMessageHidden()'>
+  	<i class="glyphicon glyphicon-remove pull-right" ></i>
+  </a>
 	<h2> Edit Message </h2>
 	<p> Document Title : {{currentMessage.content}}</p>
 	<form>
 		<input class='form-control' type='text' placeholder='Updated message here' ng-model="currentMessage.content"/>
-		<button class="btn btn-default pull-left" ng-click="updateMessage()"> Update Message </button>
+		<button class="btn btn-default" ng-click="updateMessage()"> Update Message </button>
+		<button class="btn btn-default btn-danger" ng-click="deleteMessage()"> Delete Message </button>
 </div>
