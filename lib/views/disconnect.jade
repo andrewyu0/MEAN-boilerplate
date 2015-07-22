@@ -1,16 +1,20 @@
 extend ./layout
 block content
-	.row
+	.row.center
 		.col-md-8.col-md-offset-2
 			h1= title
 			img(src='http://bit.ly/VqvT6b', width='100', height='100')
-			p HAL: What do you think you are doing dave
-			p Dave: {{myMessage.content}}
+			p.bold HAL: 
+			p What do you think you are doing dave
+			p.bold DAVE: 
+			p {{myMessage.content}}
+	.row
+		.col-md-8.col-md-offset-2			
 			h2 My Messages
 			div.messages-list
 				div(ng-repeat='message in messages')
 					//- a(ng-href='/messages/{{message._id}}') {{message.content}}
-					a(ui-sref='messages.item({id:message._id})' ng-click='getMessage(message._id); toggleMessageHidden()') {{message.content}}
+					a(ui-sref='messages.item({id:message._id})' ng-click='getMessage(message._id); toggleMessageHidden()') "{{message.content}}"
 			h2 Create a new message
 			form
 				input.form-control(type="text" ng-model="myMessage.content" placeholder='New message here')

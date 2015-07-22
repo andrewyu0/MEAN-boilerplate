@@ -20,3 +20,11 @@ img {
 	padding: 10px;
 	background-color: #F7F7F9;
 }
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
