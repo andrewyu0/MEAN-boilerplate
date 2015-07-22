@@ -5,11 +5,8 @@ block content
 	p HAL: What do you think you are doing dave
 	p Dave: {{myMessage}}
 	h2 Messages
-	table.table
-		each message in messages
-			tr
-				td
-					a(href='/messages/#{message._id}')=message.content
+	div(ng-repeat='message in messages')
+		a {{message.content}}
 	form(name="", method="post", action="/messages/create")
 		input(type="text", placeholder="New message", name="content")
 		button(type="submit") Create New Message
