@@ -4,7 +4,12 @@ This tutorial assumes you've completed [Part 1](https://medium.com/hello-there-e
 
 You can think of this tutorial as Part 3. This tutorial itself will be broken into several parts: 
 
-## PART 1:  Express CRUD routes, Mongo Set up 
+[PART 1: Express CRUD, Mongo Set Up](#part-1--express-crud-routes-mongo-set-up)
+[PART 2: Angularize Me!](#part-2-angularize-me)
+[PART 3: Angular Routing](#part-3-angular-routing)
+[PART 4: Angular UI Router](#part-4-angular-ui-router)
+
+## PART 1:  Express CRUD, Mongo Set up 
 
 Before we angularize everything, we're going to create a basic CRUD application with Express, and hook up Mongo as our database. 
 
@@ -310,7 +315,6 @@ At this point, we've implemented a full fledge basic CRUD app, set up mongo. We 
 
 ## PART 2: ANGULARIZE ME!
 
-<br><br>
 ### Requirements 
 
 In this section, we'll be building out the angular portion so we can have dynamic views in our application. We'll create the necessary javascript files, include them on our layout, and start building out the angular module. 
@@ -319,7 +323,6 @@ First, we need to include angular to our application. Add CDN to layout.jade. Yo
 
 	script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js")
 
-<br><br>
 ### Create app
 
 This is where we start writing our client side JS code. To do this we'll create a js folder that will contain all the client side HS. Create a folder and then a file in the folder: **lib/js/main.js**
@@ -330,7 +333,6 @@ We'll tell our application where the client side javascript files are. Include t
 
 Now, we can include the **main.js** file we just created on the layout.
 
-<br><br>
 ### Angular Module : main.js
 
 This is where our angular module will live. We create the app `myApp` with the following line of code: 
@@ -349,7 +351,6 @@ This line creates Angular module named myApp, dont worry about the empty array a
 
 Now we can start building out the rest of the application 
 
-<br><br>
 ### Angular Controller
 
 We're going to create an angular controller so that we can dynamically manipulate DOM elements on our view and write a message back to HAL. We'll first create the controller in **main.js** and separate our concerns in a little bit. Let's call it **MyCtrl**. We're going to set a message on $scope so that we can use it on the view.
