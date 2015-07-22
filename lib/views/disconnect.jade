@@ -9,7 +9,10 @@ block content
 			h2 Messages
 			div.messages-list
 				div(ng-repeat='message in messages')
-					a(ng-href='/messages/{{message._id}}') {{message.content}}
+					//- a(ng-href='/messages/{{message._id}}') {{message.content}}
+					a(ui-sref='messages.item({id:message._id})' ng-click='getMessage(message._id)') {{message.content}}
 			form(method="post")
 				input.form-control(type="text" ng-model="myMessage.content")
 				button.btn.btn-primary.btn-md(ng-click="createMessage()") Create New Message 
+	.row
+		.col-md-8.col-md-offset-2(ui-view='')
