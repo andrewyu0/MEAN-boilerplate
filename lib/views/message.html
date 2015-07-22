@@ -1,2 +1,7 @@
-<h1> This is the document </h1>
-<p> Document Title : {{currentMessage.content}}</p>
+<div class='message-partial'>
+	<h2> Edit Message </h2>
+	<p> Document Title : {{currentMessage.content}}</p>
+	<form>
+		<input class='form-control' type='text' placeholder='Updated message here' ng-model="currentMessage.content"/>
+		<button class="btn btn-default pull-left" ng-click="updateMessage()"> Update Message </button>
+</div>
