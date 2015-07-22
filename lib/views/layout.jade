@@ -1,7 +1,10 @@
 html(ng-app='myApp')
   head
     title= 'Hello World'
-    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
-    script(src='js/main.js')    
-  body(ng-controller='MainCtrl')
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js")
+    script(src="/js/main.js")    
+    script(src="/js/factory.js")    
+    script(src="/js/controllers/main-controller.js") 
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet")
+  body(ng-controller="MainCtrl")
     block content
