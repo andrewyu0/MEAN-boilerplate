@@ -22,8 +22,6 @@ var messageSchema = mongoose.Schema({
 
 var Message = mongoose.model('Message', messageSchema);
 
-
-
 // body parser for req.body
 app.use(bodyParser());
 // for method override on forms
@@ -42,7 +40,10 @@ var setupOdysseyRoutes = require('./lib/odyssey/routes');
 setupOdysseyRoutes(app);
 
 // Expose /lib so we can use it on the layout
-app.use(express.static(path.join(__dirname, 'lib')));
+app.use(express.static(path.join(__dirname, '/lib')));
+// Expose /bower_components so we can use it on the layout
+app.use(express.static(path.join(__dirname, '/bower_components')));
+
 
 var server = app.listen(4000, function(){
  console.log('Express server listening on port 4000');
