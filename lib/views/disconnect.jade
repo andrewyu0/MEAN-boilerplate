@@ -1,12 +1,15 @@
 extend ./layout
 block content
-	h1= title
-	img(src='http://bit.ly/VqvT6b', width='100', height='100')
-	p HAL: What do you think you are doing dave
-	p Dave: {{myMessage}}
-	h2 Messages
-	div(ng-repeat='message in messages')
-		a {{message.content}}
-	form(name="", method="post", action="/messages/create")
-		input(type="text", placeholder="New message", name="content")
-		button(type="submit") Create New Message
+	.row
+		.col-md-8.col-md-offset-2
+			h1= title
+			img(src='http://bit.ly/VqvT6b', width='100', height='100')
+			p HAL: What do you think you are doing dave
+			p Dave: {{myMessage.content}}
+			h2 Messages
+			div.messages-list
+				div(ng-repeat='message in messages')
+					a(ng-href='/messages/{{message._id}}') {{message.content}}
+			form(method="post")
+				input.form-control(type="text" ng-model="myMessage.content")
+				button.btn.btn-primary.btn-md(ng-click="createMessage()") Create New Message 
