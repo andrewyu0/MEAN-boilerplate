@@ -4,10 +4,14 @@ This tutorial assumes you've completed [Part 1](https://medium.com/hello-there-e
 
 You can think of this tutorial as Part 3. This tutorial itself will be broken into several parts: 
 
-[PART 1: Express CRUD, Mongo Set Up](#part-1--express-crud-routes-mongo-set-up)
-[PART 2: Angularize Me!](#part-2-angularize-me)
-[PART 3: Angular Routing](#part-3-angular-routing)
-[PART 4: Angular UI Router](#part-4-angular-ui-router)
+[PART 1: Express CRUD, Mongo Set Up](#part-1--express-crud-routes-mongo-set-up)<br>
+[PART 2: Angularize Me!](#part-2-angularize-me)<br>
+[PART 3: Angular Routing](#part-3-angular-routing)<br>
+[PART 4: Angular UI Router](#part-4-angular-ui-router)<br>
+
+Let's get started!
+
+-----------
 
 ## PART 1:  Express CRUD, Mongo Set up 
 
