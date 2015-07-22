@@ -1,0 +1,18 @@
+{
+  "name": "angular-CRUD",
+  "version": "0.0.0",
+  "homepage": "https://github.com/andrewcyu/angular-CRUD",
+  "authors": [
+    "Andrew <yu.drew@gmail.com>"
+  ],
+  "description": "Basic angular CRUD application",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
