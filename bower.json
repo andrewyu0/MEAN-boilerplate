@@ -1,11 +1,11 @@
 {
-  "name": "angular-CRUD",
+  "name"    : "ecommerce-store",
   "version": "0.0.0",
-  "homepage": "https://github.com/andrewcyu/angular-CRUD",
+  "homepage": "https://github.com/andrewcyu/store",
   "authors": [
     "Andrew <yu.drew@gmail.com>"
   ],
-  "description": "Basic angular CRUD application",
+  "description": "",
   "main": "app.js",
   "license": "MIT",
   "ignore": [
@@ -14,5 +14,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "restangular": "~1.5.1",
+    "lodash": "*",
+    "ui-router":"*"
+  }  
 }

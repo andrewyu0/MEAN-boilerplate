@@ -15,12 +15,8 @@ db.once('open', function (callback) {
   console.log("mongoose connection successful!")
 });
 
-// Schema set up
-var messageSchema = mongoose.Schema({
-	content: String
-});
 
-var Message = mongoose.model('Message', messageSchema);
+require('./lib/schemas');
 
 // body parser for req.body
 app.use(bodyParser());
@@ -36,8 +32,9 @@ app.use(methodOverride(function(req, res){
 
 app.set('views', path.join(__dirname, 'lib', 'views'));
 app.set('view engine', 'jade');
-var setupOdysseyRoutes = require('./lib/odyssey/routes');
-setupOdysseyRoutes(app);
+
+var setupMessageApp = require('./lib/message-app/routes');
+setupMessageApp(app);
 
 // Expose /lib so we can use it on the layout
 app.use(express.static(path.join(__dirname, '/lib')));
