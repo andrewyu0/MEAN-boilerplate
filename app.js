@@ -1,12 +1,12 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-var bodyParser = require('body-parser');
+var express      = require('express');
+var app          = express();
+var path         = require('path');
+var bodyParser   = require('body-parser');
 var methodOverride = require('method-override');
 
 // Database set up
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/store');
 
 // notification whether connection successful or not 
 var db = mongoose.connection;
@@ -15,8 +15,8 @@ db.once('open', function (callback) {
   console.log("mongoose connection successful!")
 });
 
-
 require('./lib/schemas');
+
 
 // body parser for req.body
 app.use(bodyParser());
