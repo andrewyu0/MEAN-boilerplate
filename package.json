@@ -1,5 +1,5 @@
 {
-    "name"    : "ecommerce-store",
+    "name"    : "MEAN-boilerplate",
     "private" : true,
 	  "scripts": {
     	"start": "nodemon app.js"
