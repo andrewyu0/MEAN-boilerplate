@@ -59,6 +59,7 @@ app.use(express.static(path.join(__dirname, '/bower_components')));
 */
 
 app.use(require('./lib/message-app'));
+// app.use(require('./lib/store-app'));
 
 
 var server = app.listen(4000, function(){

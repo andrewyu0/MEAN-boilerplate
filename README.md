@@ -1,4 +1,4 @@
-## MEAN Boilerplate 
+## e-commerce store built on MEAN 
 
 * Mongo set up 
 * Express
