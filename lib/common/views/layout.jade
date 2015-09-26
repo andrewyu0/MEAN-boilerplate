@@ -1,6 +1,16 @@
 html(ng-app='myApp')
   head
     title= 'MEAN Boilerplate'
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet")
+    link(href="/styles/main.css", rel="stylesheet")
+  body(ng-controller="MainCtrl")
+    
+    include ../partials/_header
+
+    block content
+
+    include ../partials/_footer
+
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js")
     script(src='/lodash/lodash.min.js')
     script(src="/restangular/dist/restangular.min.js")
@@ -8,7 +18,3 @@ html(ng-app='myApp')
     script(src="/js/main.js")    
     script(src="/js/factory.js")    
     script(src="/js/controllers/main-controller.js") 
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet")
-    link(href="/styles/main.css", rel="stylesheet")
-  body(ng-controller="MainCtrl")
-    block content
