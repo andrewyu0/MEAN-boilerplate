@@ -1,10 +1,10 @@
 extend ./layout
 block content
-	h1=message.content 
-	form(method='post' action='/messages/#{message.id}')
-		input(type='text' placeholder='new message here' name='content')
-		button(type='submit') Update your message!	
-	form(action='/messages/#{message.id}' method="post")
-		input(type='hidden' name='_method' value='delete')
-		button(type='submit') Delete	
-	a(href='/disconnect-hal') back to main page
+  h1=message.content 
+  form(method='post' action='/messages/#{message.id}')
+    input(type='text' placeholder='new message here' name='content')
+    button(type='submit') Update your message!  
+  form(action='/messages/#{message.id}' method="post")
+    input(type='hidden' name='_method' value='delete')
+    button(type='submit') Delete  
+  a(href='/disconnect-hal') back to main page

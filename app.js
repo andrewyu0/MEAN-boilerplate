@@ -22,7 +22,6 @@ db.once('open', function (callback) {
 // Load models 
 require('./lib/schemas');
 
-
 /*****************
  * APP SET UP 
  *****************/
